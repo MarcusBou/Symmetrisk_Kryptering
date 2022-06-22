@@ -50,12 +50,12 @@ namespace Symmetrisk_Kryptering
                 Console.Clear();
                 if (possible)
                 {
-                    byte[] cryptet = cryption.Encrypt(Encoding.ASCII.GetBytes(message));
+                    byte[] cryptet = cryption.Encrypt(Encoding.ASCII.GetBytes(message));//converts message to bytes
                     byte[] decryptet = cryption.Decrypt(cryptet);
                     Console.WriteLine("Algorhytm choosen: " + algorhytmChoosen);
                     Console.WriteLine("Original text: " + message);
-                    Console.WriteLine("Encrypted text: " + Convert.ToBase64String(cryptet));
-                    Console.WriteLine("Decrypted text: " + Encoding.UTF8.GetString(decryptet));
+                    Console.WriteLine("Encrypted text: " + Convert.ToBase64String(cryptet));//Converts to string
+                    Console.WriteLine("Decrypted text: " + Encoding.UTF8.GetString(decryptet));//Converts to string of utf8
                 }
                 else{
                     Console.WriteLine("\nNot a valid encryption algorhitm selected");
