@@ -15,6 +15,10 @@ namespace Symmetrisk_Kryptering
 
         }
 
+        /// <summary>
+        /// Sets algorhyt
+        /// </summary>
+        /// <param name="sa"></param>
         public void SetSymmetric(SymmetricAlgorithm sa)
         {
             symmetricAlgorithm = sa;
@@ -22,10 +26,17 @@ namespace Symmetrisk_Kryptering
             symmetricAlgorithm.GenerateIV();
         }
 
+        /// <summary>
+        /// Encrypts Message
+        /// </summary>
+        /// <param name="mess"></param>
+        /// <returns></returns>
         public byte[] Encrypt(byte[] mess)
         {
+            //Sets Ciphermode and paddingmode
             symmetricAlgorithm.Mode = CipherMode.CBC;
             symmetricAlgorithm.Padding = PaddingMode.PKCS7;
+
             MemoryStream ms = new MemoryStream();
             CryptoStream cs = new CryptoStream(ms, this.symmetricAlgorithm.CreateEncryptor(), CryptoStreamMode.Write);
             cs.Write(mess, 0, mess.Length);
@@ -33,7 +44,11 @@ namespace Symmetrisk_Kryptering
             return ms.ToArray();
 
         }
-
+        /// <summary>
+        /// Decrypts encryption
+        /// </summary>
+        /// <param name="mess"></param>
+        /// <returns></returns>
         public byte[] Decrypt(byte[] mess)
         {
             //Sets Ciphermode and paddingmode
