@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Symmetrisk_Kryptering", "Symmetrisk_Kryptering\Symmetrisk_Kryptering.csproj", "{B71D3CA2-FD06-41DE-9F1B-47AEC9BF87AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B71D3CA2-FD06-41DE-9F1B-47AEC9BF87AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B71D3CA2-FD06-41DE-9F1B-47AEC9BF87AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B71D3CA2-FD06-41DE-9F1B-47AEC9BF87AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B71D3CA2-FD06-41DE-9F1B-47AEC9BF87AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB12E833-BBA7-47B8-9DB7-AD924F24AA2B}
+	EndGlobalSection
+EndGlobal
